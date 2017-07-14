@@ -95,3 +95,19 @@ img{
 #butt {
   padding-top: 20px;
 }
+
+#upcoming {
+  padding-top: 10px;
+}
+
+.game {
+  padding-top: 20px; 
+  padding-bottom: 10px;
+  background: #eee;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 50%;
+}
