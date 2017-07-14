@@ -16,7 +16,8 @@ var router = express.Router();
 var port = process.env.API_PORT || 3001;
 
 //db configure
-mongoose.connect('mongodb://super:password@ds157712.mlab.com:57712/megd')
+mongoose.connect('mongodb://heroku_w5m8fh3x:kdpa4bcumdkbbcr99p686b2ao1@ds157712.mlab.com:57712/he
+roku_w5m8fh3x')
 
 //now we should configure the API to use bodyParser and look for
 //JSON data in the request body
