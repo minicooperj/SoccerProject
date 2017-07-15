@@ -4,6 +4,7 @@ import axios from 'axios';
 import CommentList from './CommentList';
 import CommentForm from './CommentForm';
 import style from './style';
+
 class CommentBox extends Component {
  constructor(props) {
  super(props);
