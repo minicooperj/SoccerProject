@@ -3,6 +3,7 @@
 
 //first we import our dependencies…
 var express = require('express');
+const path = require('path');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var Comment = require('./model/comments');
