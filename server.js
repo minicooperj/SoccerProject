@@ -44,10 +44,6 @@ app.get('/', function (req, res) {
 
 app.listen(9000);
 
-//now we can set the route path & initialize the API
-router.get('/', function(req, res) {
- res.json({ message: 'API Initialized!'});
-});
 
 //now we can set the route path & initialize the API
 router.get('/', function(req, res) {
