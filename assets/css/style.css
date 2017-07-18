@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
-body {
+.index-body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+}
+
+.home-body {
+  overflow-y: hidden;
 }
 
 .homepage-hero-module {
@@ -84,12 +88,20 @@ body {
   filter: grayscale(50%);
 }
 
+nav{
+  border-top: 3px solid lightgreen;
+}
+
+
+
 img{
   padding-bottom: 10px;
 }
 
 #left {
   background: lightgreen;
+  height: 100vh;
+  /*overflow-y: scroll;*/
 }
 
 #butt {
@@ -97,17 +109,46 @@ img{
 }
 
 #upcoming {
-  padding-top: 10px;
+  height: calc(50vh - 45px - 1.5em);
+  overflow-y: scroll;
 }
 
 .game {
-  padding-top: 20px; 
-  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
   background: #eee;
 }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
 #map {
-  height: 50%;
+  width: 100%;
+  height: calc(50vh - 45px - 1.5em);
+  overflow: hidden;
+}
+
+#right {
+  height: calc(100vh - 56px - 1.5em);
+  overflow-y: scroll;
+}
+
+.park-title {
+  color: #ffffff;
+   font-size: 2vw;
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+    .abs-center-x {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 990px) {
+  .park-title {
+    font-size: 4vw; 
+  }
 }
